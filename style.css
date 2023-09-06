@@ -6,7 +6,7 @@
     font-family: 'Open Sans',sans-serif;
 }
 
-.first
+body
 {
     height: 100vh;
     background-color: #111111;
@@ -205,6 +205,7 @@ form
     border-radius: 20px;
     text-align: center;
     width: 340px;
+    background-color: white;
 }
 
 .input_text
