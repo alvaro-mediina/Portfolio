@@ -113,7 +113,8 @@ header
 
 .dropdown___menu.open
 {
-    height: 216px;
+    height: 280px;
+    background-color: #272927;
 }
 
 .dropdown___menu li
@@ -122,6 +123,7 @@ header
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 10px;
 }
 
 .dropdown___menu .action___btn
