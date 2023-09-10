@@ -27,6 +27,10 @@ a
     font-size: 1rem;
 }
 
+a:hover
+{
+    color:#0DBB59;
+}
 
 /*HEADER*/
 header
@@ -50,26 +54,12 @@ header
 {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #0DBB59;
 }
 
 .navbar .links
 {
     display: flex;
     gap: 2rem;
-}
-
-.links a
-{
-    color: white;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-.links a:hover
-{
-    color: #0DBB59;
-    border: solid 2px #0dbb59;
 }
 
 .navbar .toggle___btn
@@ -178,46 +168,117 @@ header
 
 main
 {
-    padding: 100px;
+    min-height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content:space-between;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-.presentation
+.mode
+{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding: 0px 10px;
+}
+
+.mode img
+{
+    width: 40px;
+    border-radius: 70%;
+}
+
+.mode button
+{
+    border: 0;
+    border-radius: 50%;
+    width: 50px;
+}
+
+.form
 {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
-.presentation .logo img
+form
 {
-    width:245px;
-    height: 245px;
-    border-radius: 50%;
-    border: solid 7px #0DBB59;
+    margin: 30px 30px;
+    padding: 20px 55px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+    border: solid 2px #0DBB59;
 }
 
-.box1
+.input_text
 {
     display: flex;
     flex-direction: column;
-    padding-left: 60px;
-    width: 50%;
+    text-align: left;
 }
 
-.box1 h2
+form h2
 {
-    padding-bottom: 20px;
     color:#0DBB59;
-    font-size: 60px;
-    font-weight: bold;
+    font-size: 35px;
+}
+
+label
+{
+    color:#FFF;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+input, textarea,select
+{
+    padding: 10px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #EDFFF0;
+    border: 2px solid #F0FAF1;
+    color: #272927;
+    outline: none;
+}
+
+input::placeholder,textarea::placeholder
+{
+    color: #a4afa5;
 }
 
 
-.box1 p
+.btn
 {
-    color: white;
-    font-size: 20px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 550;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 25px;
+    background-color: #51d94c;
+    box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+    cursor: pointer;
+}
+
+.btn:hover
+{
+    background-color: #50E048;
+}
+
+@media(max-width)
+{
+    main{
+        padding: 30px;
+    }
+
+    form{
+        padding: 50px 30px;
+    }
+
+    input{
+        padding: 15px 10px;
+    }
 }
