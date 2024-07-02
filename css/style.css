@@ -163,7 +163,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 160px;
+    padding: 70px 200px;
 }
 
 .presentation .logo img{
@@ -198,8 +198,51 @@ main{
 .button___cv{
     padding: 10px 0px;
     display: flex;
-    justify-content: end;
+    justify-content:space-between;
+    align-items: center;
 }
+
+.button___cv .icons{
+    display: flex;
+    flex-direction: row;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+}
+
+.icons img{
+    width: 35px;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon1, .icon2{
+    margin: 0px 10px 0px 0px;
+    background-color: #0DBB59;
+    border-radius: 50%;
+    padding: 2px;
+    display: flex;
+    align-self: center;
+}
+
+.icon3{
+    padding:2px;
+    width: auto;
+    display: flex;
+    align-self: center;
+    background-color: #0DBB59;
+    border-radius: 30%;
+}
+
+.icon1:hover img,
+.icon2:hover img,
+.icon3:hover img {
+    transform: scale(1.2); /* Aumenta el tamaño de la imagen al 120% */
+}
+
 
 .button___cv button{
     width: 120px;
