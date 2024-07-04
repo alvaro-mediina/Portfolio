@@ -7,10 +7,10 @@
 
 body{
     height: 100vh;
-    background-color: #111111;
-    /*background-image: url('img/3.jpg');*/
+    background-color: #000000;
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 }
 
 li{
@@ -110,7 +110,7 @@ header{
 }
 
 .dropdown___menu.open{
-    height: 280px;
+    height: auto;
     background-color: #272927;
 }
 
@@ -151,6 +151,11 @@ header{
         left: 2rem;
         width: unset;
     }
+
+    .dropdown___menu.open{
+        height: auto;
+        background-color: #272927;
+    }
 }
 
 main{
@@ -163,7 +168,8 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 70px 200px;
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
 }
 
 .presentation .logo img{
@@ -193,6 +199,7 @@ main{
 .box1 p{
     color: white;
     font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .button___cv{
@@ -264,7 +271,6 @@ button:hover{
 /*Projects*/
 .projects{
     height: 100vh;
-    background-color: #ffffff;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -274,6 +280,7 @@ button:hover{
 .projects h1{
     font-size: 50px;
     font-weight: bold;
+    color: #0DBB59;
 }
 
 .projects .tabs{
@@ -304,7 +311,6 @@ button:hover{
 /*Skills*/
 .skills{
     height: 100vh;
-    background-color: #1b1c1b;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -312,7 +318,7 @@ button:hover{
 }
 
 .skills h1{
-    color: white;
+    color: #0DBB59;
     font-size: 50px;
     font-weight: bold;
 }
@@ -344,7 +350,6 @@ button:hover{
 /*Blog*/
 .blog{
     height: 100vh;
-    background-color: #ffffff;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -355,39 +360,39 @@ button:hover{
     font-size: 50px;
     font-weight: bold;
     margin: 0px 0px 60px 0px;
+    color: #0DBB59;
 }
 
 .blog p{
     width: 700px;
     padding: 10px;
     font-size: 20px;
-    color: black;
+    color: white;
 }
 /*End Blog*/
-
-/* @media(max-width: 992px)
+@media(max-width: 992px)
 {
     .presentation
     {
+        display: flex;
         padding: 20px;
+        height: 100vh;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: sp;
         
     }
 
     .presentation .box1
     {
+        margin: 0px;
         justify-content:flex-start;
-        padding: 30px 0px 0px 0px;
+        padding: 0px;
         width: 280px;
     }
 
     .box1 h2
     {
         text-align: center;
-        font-size:  55px;
-    } */
-
-
-    
-
+        font-size:  40px;
+    }
+}
