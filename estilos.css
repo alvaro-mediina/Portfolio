@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans',sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: #000000;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1rem;
+}
+
+
+/*HEADER*/
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar{
+    width: 100%;
+    height: 70px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0DBB59;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+
+.links a{
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.links a:hover{
+    color: #0DBB59;
+    border: solid 2px #0dbb59;
+}
+
+.navbar .toggle___btn{
+    color: #FFF;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action___btn{
+    background-color: #0DBB59;
+    color:#FFF;
+    padding: 0.5rem 1rem;
+    border:none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+    width: 120px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(25, 254, 0, 0.4);
+}
+
+.action___btn:hover{
+    scale: 1.05;
+    color: #FFF;
+}
+
+.action___btn:active{
+    scale: 0.95;
+}
+
+/*DROPDOWN MENU*/
+.dropdown___menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    height: 0;
+    background-color: rgba(255,255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown___menu.open{
+    height: auto;
+    background-color: #272927;
+}
+
+.dropdown___menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.dropdown___menu .action___btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*RESPONSIVE HEADER*/
+@media(max-width: 992px){
+    .navbar .links,
+    .navbar .action___btn{
+        display: none;
+    }
+
+
+    .navbar .toggle___btn{
+        display: block;
+    }
+
+    .dropdown___menu{
+        display: block;
+    }
+}
+
+@media(max-width: 576px){
+    .dropdown___menu{
+        left: 2rem;
+        width: unset;
+    }
+
+    .dropdown___menu.open{
+        height: auto;
+        background-color: #272927;
+    }
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.presentation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+}
+
+.presentation .logo img{
+    width:250px;
+    height: 250px;
+    border-radius: 50%;
+    border: solid 7px #0DBB59;
+    object-fit: cover;
+    object-position: 0px -70px;
+}
+
+.box1{
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+    width: 50%;
+}
+
+.box1 h2{
+    padding-bottom: 20px;
+    color:#0DBB59;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+
+.box1 p{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.button___cv{
+    padding: 10px 0px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.button___cv .icons{
+    display: flex;
+    flex-direction: row;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+}
+
+.icons img{
+    width: 35px;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon1, .icon2{
+    margin: 0px 10px 0px 0px;
+    background-color: #0DBB59;
+    border-radius: 50%;
+    padding: 2px;
+    display: flex;
+    align-self: center;
+}
+
+.icon3{
+    padding:2px;
+    width: auto;
+    display: flex;
+    align-self: center;
+    background-color: #0DBB59;
+    border-radius: 30%;
+}
+
+.icon1:hover img,
+.icon2:hover img,
+.icon3:hover img {
+    transform: scale(1.2); /* Aumenta el tamaño de la imagen al 120% */
+}
+
+
+.button___cv button{
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #0DBB59;
+    border: none;
+    color: white;
+    font-size: 0.95rem;
+    font-weight: bold;
+    box-shadow: 0 0 5px rgba(25, 254, 0, 0.4);
+    transition: scale 0.2 ease;
+}
+
+button:hover{
+    scale: 1.05;
+}
+
+/*Projects*/
+.projects{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px;
+}
+
+.projects h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #0DBB59;
+}
+
+.projects .tabs{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabs .tab1, .tab2, .tab3, .tab4{
+    width: 300px;
+    height: 250px;
+    margin: 0px 20px 20px 0px;
+    border-radius: 10px;
+    background-color: #272927;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+.tab1, .tab2, .tab3, .tab4{
+    justify-content: center;
+}
+/*End Projects*/
+
+/*Skills*/
+.skills{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills h1{
+    color: #0DBB59;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.skills .tabskills{
+    margin-top: 50px;
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: #272927;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills .row1, .row2{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+.row1 img, .row2 img{
+    width: 100px;
+    object-fit: cover;
+}
+
+/*End Skills*/
+
+/*Blog*/
+.blog{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0px 0px 60px 0px;
+    color: #0DBB59;
+}
+
+.blog p{
+    width: 700px;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+}
+/*End Blog*/
+@media(max-width: 992px)
+{
+    .presentation
+    {
+        display: flex;
+        padding: 20px;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: sp;
+        
+    }
+
+    .presentation .box1
+    {
+        margin: 0px;
+        justify-content:flex-start;
+        padding: 0px;
+        width: 280px;
+    }
+
+    .box1 h2
+    {
+        text-align: center;
+        font-size:  40px;
+    }
+}
