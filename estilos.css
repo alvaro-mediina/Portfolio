@@ -10,166 +10,25 @@ body{
     background-color: #000000;
     background-size: cover;
     background-position: center;
-    overflow: hidden;
-}
-
-li{
-    list-style: none;
-}
-
-a{
-    text-decoration: none;
-    color: #FFF;
-    font-size: 1rem;
-}
-
-
-/*HEADER*/
-header{
-    position: relative;
-    padding: 0 2rem;
-}
-
-.navbar{
-    width: 100%;
-    height: 70px;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navbar .logo a{
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #0DBB59;
-}
-
-.navbar .links{
-    display: flex;
-    gap: 2rem;
-}
-
-.links a{
-    color: white;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-.links a:hover{
-    color: #0DBB59;
-    border: solid 2px #0dbb59;
-}
-
-.navbar .toggle___btn{
-    color: #FFF;
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: none;
-}
-
-.action___btn{
-    background-color: #0DBB59;
-    color:#FFF;
-    padding: 0.5rem 1rem;
-    border:none;
-    outline: none;
-    border-radius: 20px;
-    font-size: 0.95rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: scale 0.2 ease;
-    width: 120px;
-    text-align: center;
-    box-shadow: 0 0 5px rgba(25, 254, 0, 0.4);
-}
-
-.action___btn:hover{
-    scale: 1.05;
-    color: #FFF;
-}
-
-.action___btn:active{
-    scale: 0.95;
-}
-
-/*DROPDOWN MENU*/
-.dropdown___menu{
-    display: none;
-    position: absolute;
-    right: 2rem;
-    top: 60px;
-    width: 300px;
-    height: 0;
-    background-color: rgba(255,255, 255, 0.1);
-    backdrop-filter: blur(15px);
-    border-radius: 10px;
-    overflow: hidden;
-    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.dropdown___menu.open{
-    height: auto;
-    background-color: #272927;
-}
-
-.dropdown___menu li{
-    padding: 0.7rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-}
-
-.dropdown___menu .action___btn{
     width: 100%;
     display: flex;
     justify-content: center;
-}
-
-
-/*RESPONSIVE HEADER*/
-@media(max-width: 992px){
-    .navbar .links,
-    .navbar .action___btn{
-        display: none;
-    }
-
-
-    .navbar .toggle___btn{
-        display: block;
-    }
-
-    .dropdown___menu{
-        display: block;
-    }
-}
-
-@media(max-width: 576px){
-    .dropdown___menu{
-        left: 2rem;
-        width: unset;
-    }
-
-    .dropdown___menu.open{
-        height: auto;
-        background-color: #272927;
-    }
 }
 
 main{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
+    height: 100%;
 }
 
 .presentation{
+    width: 100%;
+    margin: 20px 0px 20px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(0, 0, 0);
-    height: 100vh;
 }
 
 .presentation .logo img{
@@ -217,6 +76,10 @@ main{
 .icons{
     display: flex;
     align-items: center;
+}
+
+.icons a{
+    display: flex;
 }
 
 .icons img{
@@ -270,11 +133,11 @@ button:hover{
 
 /*Projects*/
 .projects{
-    height: 100vh;
+    width: 100%;
+    margin: 20px 0px 20px 0px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 100px;
 }
 
 .projects h1{
@@ -283,17 +146,36 @@ button:hover{
     color: #0DBB59;
 }
 
+.projects p{
+    margin: 50px 0px 0px 0px;
+    color: white;
+    width: 70%;
+    font-size: 20px;
+}
+
 .projects .tabs{
     margin-top: 50px;
-    width: 100%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
 }
 
-.tabs .tab1, .tab2, .tab3, .tab4{
+.tabs .tab1, .tab2, .tab3{
     width: 300px;
     height: 250px;
-    margin: 0px 20px 20px 0px;
+    margin-right:20px;
+    border-radius: 10px;
+    background-color: #272927;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+.tabs .tab4{
+    width: 300px;
+    height: 250px;
     border-radius: 10px;
     background-color: #272927;
     display: flex;
@@ -310,21 +192,31 @@ button:hover{
 
 /*Skills*/
 .skills{
-    height: 100vh;
+    width: 100%;
+    margin: 20px 0px 20px 0px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
+
 .skills h1{
     color: #0DBB59;
     font-size: 50px;
     font-weight: bold;
+
+}
+
+.skills p{
+    margin-top: 50px;
+    color: white;
+    width: 70%;
+    font-size: 20px;
 }
 
 .skills .tabskills{
-    margin-top: 50px;
+    margin: 50px 0px 0px 0px;
     width: 500px;
     height: 300px;
     border-radius: 10px;
@@ -349,7 +241,8 @@ button:hover{
 
 /*Blog*/
 .blog{
-    height: 100vh;
+    margin: 20px 0px 20px 0px;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -359,12 +252,12 @@ button:hover{
 .blog h1{
     font-size: 50px;
     font-weight: bold;
-    margin: 0px 0px 60px 0px;
     color: #0DBB59;
 }
 
 .blog p{
-    width: 700px;
+    width: 70%;
+    margin-top: 50px;
     padding: 10px;
     font-size: 20px;
     color: white;
