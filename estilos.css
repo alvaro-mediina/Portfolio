@@ -153,14 +153,45 @@ button:hover{
     font-size: 20px;
 }
 
-.projects .tabs{
-    margin-top: 50px;
-    width: 70%;
+
+.projects .tablero1{
     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    margin-top: 50px;
+}
+
+.tablero1 h2{
+    color: #0DBB59;
+    width: 70%;
+    font-size: 15px;
+}
+
+.tablero1 .tabs{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
-.tabs .tab1, .tab2, .tab3{
+
+.tablero1 h2{
+    color: #0DBB59;
+    width: 70%;
+    font-size: 15px;
+}
+
+.tablero1 .tabs{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tablero1 .tabs .tab1, .tab2, .tab3{
     width: 300px;
     height: 250px;
     margin-right:20px;
@@ -171,9 +202,60 @@ button:hover{
     align-items: center;
     padding: 20px;
     color: white;
+    justify-content: center;
 }
 
-.tabs .tab4{
+.tablero1 .tabs .tab4{
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: #272927;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    justify-content: center ;
+}
+
+
+.projects .tablero2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    margin-top: 50px;
+}
+
+
+.tablero2 h2{
+    color: #ff0000;
+    font-size: 15px;
+}
+
+.tablero2 .tabs{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tablero2 .tabs .tab1, .tab2{
+    width: 300px;
+    height: 250px;
+    margin-right:20px;
+    border-radius: 10px;
+    background-color: #272927;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    justify-content: center;
+}
+
+.tablero2 .tabs .tab3{
     width: 300px;
     height: 250px;
     border-radius: 10px;
@@ -185,9 +267,7 @@ button:hover{
     color: white;
 }
 
-.tab1, .tab2, .tab3, .tab4{
-    justify-content: center;
-}
+
 /*End Projects*/
 
 /*Skills*/
