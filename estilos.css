@@ -179,7 +179,7 @@ button:hover{
 
 .tablero1 h2{
     color: #0DBB59;
-    width: 70%;
+    width: 100%;
     font-size: 15px;
 }
 
@@ -191,33 +191,51 @@ button:hover{
     justify-content: space-between;
 }
 
-.tablero1 .tabs .tab1, .tab2, .tab3{
+
+.tabs .tab__{
     width: 300px;
-    height: 250px;
+    height: auto;
     margin-right:20px;
-    border-radius: 10px;
     background-color: #272927;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    padding: 20px;
-    color: white;
-    justify-content: center;
+    padding-bottom: 10px;
 }
 
-.tablero1 .tabs .tab4{
-    width: 300px;
-    height: 250px;
-    border-radius: 10px;
-    background-color: #272927;
+.tab__ img{
+    width: 100%;
+    height: auto;
+}
+
+.tab__ h3{
+    margin: 20px 0px 0px 0px;
+    align-self: center;
+    color: white;
+}
+
+.tab__ .text{
+    width: 98%;
+    height: auto;
+    padding: 15px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    color: white;
-    justify-content: center ;
+    align-content: center;
 }
 
+.tab__  .text p{
+    width: 100%;
+    font-size: 12px;
+    margin: 0px;
+}
+
+.tab__ button{
+    width: 90%;
+    margin-bottom: 10px;
+    height: 35px;
+    font-size: 15px;
+    font-family: 'Open Sans',sans-serif;
+}
 
 .projects .tablero2{
     display: flex;
@@ -239,32 +257,6 @@ button:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.tablero2 .tabs .tab1, .tab2{
-    width: 300px;
-    height: 250px;
-    margin-right:20px;
-    border-radius: 10px;
-    background-color: #272927;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    color: white;
-    justify-content: center;
-}
-
-.tablero2 .tabs .tab3{
-    width: 300px;
-    height: 250px;
-    border-radius: 10px;
-    background-color: #272927;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    color: white;
 }
 
 
@@ -289,33 +281,44 @@ button:hover{
 }
 
 .skills p{
-    margin-top: 50px;
+    margin-top: 30px;
     color: white;
     width: 70%;
-    font-size: 20px;
+    font-size: 17px;
 }
 
-.skills .tabskills{
-    margin: 50px 0px 0px 0px;
-    width: 500px;
-    height: 300px;
-    border-radius: 10px;
-    background-color: #272927;
+.skills .badges {
     display: flex;
     flex-direction: column;
+    margin: 30px 0px 10px 0px;
 }
 
-.skills .row1, .row2{
+.skills .badges__{
+    display: none;
+}
+
+.badges .row1{
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
+    justify-content: center;
+    gap: 5px;
 }
 
 
-.row1 img, .row2 img{
-    width: 100px;
-    object-fit: cover;
+.badges .row2{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
 }
+
+.badges img{
+    width: auto;
+    height: 35px;
+}
+
 
 /*End Skills*/
 
@@ -343,8 +346,10 @@ button:hover{
     color: white;
 }
 /*End Blog*/
+
 @media(max-width: 992px)
 {
+    /*Presentation*/
     .presentation
     {
         display: flex;
@@ -368,4 +373,69 @@ button:hover{
         text-align: center;
         font-size:  40px;
     }
+    
+    /*Projects*/
+    .projects{
+        display: flex;
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .projects .tablero1{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .projects .tabs{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    .projects .tablero2{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .projects .tab__{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /*Skills*/
+    .skills{
+        display: flex;
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .skills p{
+        width: 100%;
+    }
+
+    .skills .badges{
+        display: none;
+    }
+
+    .skills .badges__{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        justify-content: center;
+    }
+    
+    .badges__ img{
+        height: 30px;
+        width: auto;
+    }
+
 }
