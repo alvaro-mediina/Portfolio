@@ -157,16 +157,22 @@ button:hover{
 .projects .tablero1{
     display: flex;
     justify-content: center;
+    align-self: center;
     flex-direction: column;
     width: 70%;
     margin-top: 50px;
 }
 
-.tablero1 h2{
+.tablero1 h2,.tablero2 h2{
+    padding: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #0DBB59;
     color: #0DBB59;
-    width: 70%;
     font-size: 15px;
+    text-align: center;
 }
+
 
 .tablero1 .tabs{
     margin-top: 20px;
@@ -174,28 +180,13 @@ button:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-
-.tablero1 h2{
-    color: #0DBB59;
-    width: 100%;
-    font-size: 15px;
-}
-
-.tablero1 .tabs{
-    margin-top: 20px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    gap: 15px;
 }
 
 
 .tabs .tab__{
     width: 300px;
     height: auto;
-    margin-right:20px;
     background-color: #272927;
     display: flex;
     flex-direction: column;
@@ -245,11 +236,12 @@ button:hover{
     margin-top: 50px;
 }
 
-
-.tablero2 h2{
-    color: #ff0000;
-    font-size: 15px;
+.tablero2 .terminado{
+    padding: 10px;
+    border-color: #0DBB59;
+    width: auto;
 }
+
 
 .tablero2 .tabs{
     margin-top: 20px;
@@ -257,6 +249,7 @@ button:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 15px;
 }
 
 
@@ -402,7 +395,7 @@ button:hover{
         justify-content: center;
         flex-direction: column;
         width: 100%;
-        margin-top: 50px;
+        margin-top: 25px;
     }
 
     .projects .tab__{
@@ -433,6 +426,15 @@ button:hover{
         justify-content: center;
     }
     
+    .badges__ .row1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-self: center;
+        gap: 5px;
+        margin: 10px;
+    }
+
     .badges__ img{
         height: 30px;
         width: auto;
