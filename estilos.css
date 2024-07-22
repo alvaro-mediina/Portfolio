@@ -24,7 +24,7 @@ main{
 
 .presentation{
     width: 100%;
-    margin: 20px 0px 20px 0px;
+    margin: 50px 0px 20px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,7 +134,7 @@ button:hover{
 /*Projects*/
 .projects{
     width: 100%;
-    margin: 20px 0px 20px 0px;
+    margin-top: 50px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -187,17 +187,23 @@ button:hover{
 .tabs .tab__{
     width: 300px;
     height: auto;
-    background-color: #272927;
+    background-color: none;
+    border-style: solid;
+    border-color: #0DBB59;
+    border-radius: 10px;;
+    border-width: 3px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding-bottom: 10px;
+    overflow: hidden;
 }
 
 .tab__ img{
     width: 100%;
     height: auto;
+    border-radius: initial;
 }
 
 .tab__ h3{
@@ -252,13 +258,26 @@ button:hover{
     gap: 15px;
 }
 
+.tabs button{
+    width: 70%;
+    border-radius: 10px;
+    background-color: #0DBB59;
+    border: none;
+    color: white;
+    font-size: 0.95rem;
+    font-weight: bold;
+    box-shadow: 0 0 5px rgba(25, 254, 0, 0.4);
+    transition: scale 0.2 ease;
+}
+
 
 /*End Projects*/
 
 /*Skills*/
 .skills{
     width: 100%;
-    margin: 20px 0px 20px 0px;
+    margin-top: 50px;
+    padding-bottom: 50px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -270,14 +289,20 @@ button:hover{
     color: #0DBB59;
     font-size: 50px;
     font-weight: bold;
+}
 
+.skills .textH{
+    display: flex;
+    align-self: center;
+    justify-content: center;
 }
 
 .skills p{
     margin-top: 30px;
     color: white;
     width: 70%;
-    font-size: 17px;
+    font-size: 20px;
+    text-align: center;
 }
 
 .skills .badges {
@@ -311,14 +336,13 @@ button:hover{
     width: auto;
     height: 35px;
 }
-
-
 /*End Skills*/
 
 /*Blog*/
 .blog{
-    margin: 20px 0px 20px 0px;
+    margin-top: 50px;
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -331,12 +355,24 @@ button:hover{
     color: #0DBB59;
 }
 
-.blog p{
-    width: 70%;
+.blog table{
+    width: 100%;
     margin-top: 50px;
-    padding: 10px;
-    font-size: 20px;
     color: white;
+    font-size: 17px;
+}
+
+.blog ul{
+    margin-top: 50px;
+    color: white;
+    width: 100%;
+    font-size: 17px;
+    list-style-type: none;
+}
+
+.blog ul li{
+    margin-top: 20px;
+    font-size: 20px;
 }
 /*End Blog*/
 
