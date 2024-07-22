@@ -291,20 +291,6 @@ button:hover{
     font-weight: bold;
 }
 
-.skills .textH{
-    display: flex;
-    align-self: center;
-    justify-content: center;
-}
-
-.skills p{
-    margin-top: 30px;
-    color: white;
-    width: 70%;
-    font-size: 20px;
-    text-align: center;
-}
-
 .skills .badges {
     display: flex;
     flex-direction: column;
@@ -391,7 +377,7 @@ button:hover{
 
     .presentation .box1
     {
-        margin: 0px;
+        margin-top: 30px;
         justify-content:flex-start;
         padding: 0px;
         width: 280px;
@@ -447,10 +433,6 @@ button:hover{
         flex-direction: column;
     }
 
-    .skills p{
-        width: 100%;
-    }
-
     .skills .badges{
         display: none;
     }
@@ -474,6 +456,11 @@ button:hover{
     .badges__ img{
         height: 30px;
         width: auto;
+    }
+
+    /*Blog*/
+    .blog .table{
+        padding: 20px;
     }
 
 }
