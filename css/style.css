@@ -24,7 +24,7 @@ main{
 
 .presentation{
     width: 100%;
-    margin: 20px 0px 20px 0px;
+    margin: 50px 0px 20px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,7 +134,7 @@ button:hover{
 /*Projects*/
 .projects{
     width: 100%;
-    margin: 20px 0px 20px 0px;
+    margin-top: 50px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -153,47 +153,131 @@ button:hover{
     font-size: 20px;
 }
 
-.projects .tabs{
-    margin-top: 50px;
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
-}
 
-.tabs .tab1, .tab2, .tab3{
-    width: 300px;
-    height: 250px;
-    margin-right:20px;
-    border-radius: 10px;
-    background-color: #272927;
+.projects .tablero1{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    color: white;
-}
-
-.tabs .tab4{
-    width: 300px;
-    height: 250px;
-    border-radius: 10px;
-    background-color: #272927;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    color: white;
-}
-
-.tab1, .tab2, .tab3, .tab4{
     justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    width: 70%;
+    margin-top: 50px;
 }
+
+.tablero1 h2,.tablero2 h2{
+    padding: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #0DBB59;
+    color: #0DBB59;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+.tablero1 .tabs{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+
+.tabs .tab__{
+    width: 300px;
+    height: auto;
+    background-color: none;
+    border-style: solid;
+    border-color: #0DBB59;
+    border-radius: 10px;;
+    border-width: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+.tab__ img{
+    width: 100%;
+    height: auto;
+    border-radius: initial;
+}
+
+.tab__ h3{
+    margin: 20px 0px 0px 0px;
+    align-self: center;
+    color: white;
+}
+
+.tab__ .text{
+    width: 98%;
+    height: auto;
+    padding: 15px;
+    display: flex;
+    align-content: center;
+}
+
+.tab__  .text p{
+    width: 100%;
+    font-size: 12px;
+    margin: 0px;
+}
+
+.tab__ button{
+    width: 90%;
+    margin-bottom: 10px;
+    height: 35px;
+    font-size: 15px;
+    font-family: 'Open Sans',sans-serif;
+}
+
+.projects .tablero2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    margin-top: 50px;
+}
+
+.tablero2 .terminado{
+    padding: 10px;
+    border-color: #0DBB59;
+    width: auto;
+}
+
+
+.tablero2 .tabs{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.tabs button{
+    width: 70%;
+    border-radius: 10px;
+    background-color: #0DBB59;
+    border: none;
+    color: white;
+    font-size: 0.95rem;
+    font-weight: bold;
+    box-shadow: 0 0 5px rgba(25, 254, 0, 0.4);
+    transition: scale 0.2 ease;
+}
+
+
 /*End Projects*/
 
 /*Skills*/
 .skills{
     width: 100%;
-    margin: 20px 0px 20px 0px;
+    margin-top: 50px;
+    padding-bottom: 50px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -205,44 +289,46 @@ button:hover{
     color: #0DBB59;
     font-size: 50px;
     font-weight: bold;
-
 }
 
-.skills p{
-    margin-top: 50px;
-    color: white;
-    width: 70%;
-    font-size: 20px;
-}
-
-.skills .tabskills{
-    margin: 50px 0px 0px 0px;
-    width: 500px;
-    height: 300px;
-    border-radius: 10px;
-    background-color: #272927;
+.skills .badges {
     display: flex;
     flex-direction: column;
+    margin: 30px 0px 10px 0px;
 }
 
-.skills .row1, .row2{
+.skills .badges__{
+    display: none;
+}
+
+.badges .row1{
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
+    justify-content: center;
+    gap: 5px;
 }
 
 
-.row1 img, .row2 img{
-    width: 100px;
-    object-fit: cover;
+.badges .row2{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
 }
 
+.badges img{
+    width: auto;
+    height: 35px;
+}
 /*End Skills*/
 
 /*Blog*/
 .blog{
-    margin: 20px 0px 20px 0px;
+    margin-top: 50px;
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -255,16 +341,30 @@ button:hover{
     color: #0DBB59;
 }
 
-.blog p{
-    width: 70%;
+.blog table{
+    width: 100%;
     margin-top: 50px;
-    padding: 10px;
-    font-size: 20px;
     color: white;
+    font-size: 17px;
+}
+
+.blog ul{
+    margin-top: 50px;
+    color: white;
+    width: 100%;
+    font-size: 17px;
+    list-style-type: none;
+}
+
+.blog ul li{
+    margin-top: 20px;
+    font-size: 20px;
 }
 /*End Blog*/
+
 @media(max-width: 992px)
 {
+    /*Presentation*/
     .presentation
     {
         display: flex;
@@ -277,7 +377,7 @@ button:hover{
 
     .presentation .box1
     {
-        margin: 0px;
+        margin-top: 30px;
         justify-content:flex-start;
         padding: 0px;
         width: 280px;
@@ -288,4 +388,79 @@ button:hover{
         text-align: center;
         font-size:  40px;
     }
+    
+    /*Projects*/
+    .projects{
+        display: flex;
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .projects .tablero1{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .projects .tabs{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    .projects .tablero2{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .projects .tab__{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /*Skills*/
+    .skills{
+        display: flex;
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .skills .badges{
+        display: none;
+    }
+
+    .skills .badges__{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        justify-content: center;
+    }
+    
+    .badges__ .row1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-self: center;
+        gap: 5px;
+        margin: 10px;
+    }
+
+    .badges__ img{
+        height: 30px;
+        width: auto;
+    }
+
+    /*Blog*/
+    .blog .table{
+        padding: 20px;
+    }
+
 }
