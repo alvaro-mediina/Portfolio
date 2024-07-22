@@ -5,6 +5,10 @@
     font-family: 'Open Sans',sans-serif;
 }
 
+.rec{
+    display: none;
+}
+
 body{
     height: 100vh;
     background-color: #000000;
